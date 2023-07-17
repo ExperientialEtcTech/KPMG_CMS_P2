@@ -14,6 +14,16 @@ include_once('jwt.php');
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <link rel="stylesheet" href="assets/css/customstyle.css">
     <style>
+body{
+	           /* Added by magdum 17-07-23 */
+            /* for background image */
+            background-image: url(./assets/CMS-BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: black;
+}
     .del-image1:hover~.tooltiptext {
         Display: block;
 
