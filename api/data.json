@@ -1,0 +1,299 @@
+{"Service": [
+  {
+  "name":"Vide01",
+  "id":"123",
+  "video1": "https://experientialetc.com/KPMG-test/assets/360video/services/GS019967.mp4",
+  "LocationHotspot":[
+    {
+      "name":"Vide02",
+      "position": {
+        "x": "3",
+        "y": "-1",
+        "z": "5"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "30",
+        "z": "0"
+      }
+    },
+    {
+      "name":"Vide03",
+      "position": {
+        "x": "6",
+        "y": "0",
+        "z": "6"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "30",
+        "z": "0"
+      }
+    },
+    {
+      "name":"Vide04",
+      "position": {
+        "x": "10",
+        "y": "1",
+        "z": "-2"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    }
+  ],
+  "hotspot": [
+    {
+      "type": "text",
+      "content": "Drill Rig Throughput – 15 m/hr Used for executing mass excavation and sequential blasting",
+      "position": {
+        "x": "7",
+        "y": "-2",
+        "z": "5"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "30",
+        "z": "0"
+      }
+    }
+  ]
+},
+{
+  "name":"Vide02",
+  "id":"546",
+  "video1": "https://experientialetc.com/KPMG-test/assets/360video/services/GS019971.mp4",
+  "LocationHotspot":[
+    {
+      "name":"Vide03",
+      "position": {
+        "x": "7",
+        "y": "0",
+        "z": "5"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "60",
+        "z": "0"
+      }
+    },
+    {
+      "name":"Vide04",
+      "position": {
+        "x": "5",
+        "y": "1",
+        "z": "-4"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "-50",
+        "z": "0"
+      }
+    }
+  ],
+  "hotspot": [
+    {
+      "type": "text",
+      "content": "Excavator Make: Sany, model:SY240 Bucket size: 1.2 Cum",
+      "position": {
+        "x": "15",
+        "y": "1",
+        "z": "5"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    },
+    {
+      "type":"text",
+      "id":"432",
+      "content":"Tower Crane deployed for material shifting at barrage blocks, same will be shifted to Right half after two months Make: Potain, Model: MCT85F5 Capacity: 5Ton, Jib length: 52 m",
+      "position": {
+        "x": "15",
+        "y": "9",
+        "z": "-5"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    },
+    {
+      "type":"text",
+      "id":"982",
+      "content": "Tipper/Dumper Make: Eicher, model:6025T Capacity: 25 T, 14 Cum",
+      "position": {
+        "x": "10",
+        "y": "0.5f",
+        "z": "1"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    },
+    {
+      "type":"text",
+      "id":"982",
+      "content": "Excavator Make: CAT, model:32303 Bucket size: 1.2 Cum ",
+      "position": {
+        "x": "10",
+        "y": "0",
+        "z": "-6"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "120",
+        "z": "0"
+      }
+    }
+  ]
+},
+{
+  "name":"Vide03",
+  "id":"547",
+  "video1": "https://experientialetc.com/KPMG-test/assets/360video/services/GS019976.mp4",
+  "LocationHotspot":[
+    {
+      "name":"Vide02",
+      "position": {
+        "x": "11",
+        "y": "0",
+        "z": "-3"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "-60",
+        "z": "0"
+      }
+    },
+    {
+      "name":"Vide01",
+      "position": {
+        "x": "6",
+        "y": "-0.5f",
+        "z": "-3"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "-60",
+        "z": "0"
+      }
+    },
+    {
+      "name":"Vide04",
+      "position": {
+        "x": "11",
+        "y": "1",
+        "z": "3"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    }
+  ],
+  "hotspot": [
+    {
+      "type": "text",
+      "content": "Barrage works involve working in river bed and carries huge risk to manpower and machinery, hence construction is carried out in two stages. Stage 1 -  River is diverted via right half and construction is carried in left half. Stage 2 (current stage) - River is diverted via left half and construction is carried in right half.",
+      "position": {
+        "x": "10",
+        "y": "1",
+        "z": "-1"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    }
+  ]
+},
+{
+  "name":"Vide04",
+  "id":"540",
+  "video1": "https://experientialetc.com/KPMG-test/assets/360video/services/GS019979.mp4",
+  "LocationHotspot":[
+    {
+      "name":"Vide02",
+      "position": {
+        "x": "5",
+        "y": "0",
+        "z": "6"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "60",
+        "z": "0"
+      }
+    }
+  ],
+  "hotspot": [
+    {
+      "type": "text",
+      "content": "Hydra Make: Escort Capacity: 14T Activity: Metal form work and rebar shifting",
+      "position": {
+        "x": "2",
+        "y": "0",
+        "z": "10"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      }
+    },
+    {
+      "type": "text",
+      "content": "Dumper/Tpper Make: Eicher, Model: 6025T Capacity: 25T, 14 Cum Activity: Carrying muck to backfill the left training wall",
+      "position": {
+        "x": "-6",
+        "y": "0",
+        "z": "10"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      }
+    },
+    {
+      "type": "text",
+      "content": "Prefabricated brackets and truss arrangement to be placed for expediting barrage concreting works. Same will enable site team for carrying out concrete works above flowing river",
+      "position": {
+        "x": "15",
+        "y": "2",
+        "z": "3"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    },
+    {
+      "type": "text",
+      "content": "Boom Placer enabled concreting from distant approach after diverting river through left half Make: Schwing, S 36 X Throughput – 30 cum/hr Reach – 36 m",
+      "position": {
+        "x": "15",
+        "y": "0",
+        "z": "-3"
+      },
+      "rotation": {
+        "x": "0",
+        "y": "90",
+        "z": "0"
+      }
+    }
+  ]
+}
+]
+}
