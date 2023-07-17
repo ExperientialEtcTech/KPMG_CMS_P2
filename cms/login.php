@@ -138,7 +138,7 @@ function refreshCaptcha(){
 <body>
    
     <main>
-
+<!-- Added by magdum shaikh - for logo - 117/07 - start  -->
     <!-- Added by shubham Jadhav - for logo - 14/1 - start  -->
     <div style="margin:15px">
         <img src = "./assets/KPMG_logo.png" style = "width:15%;vertical-align:middle"></img>
