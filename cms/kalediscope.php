@@ -176,7 +176,7 @@ video {
             <div style="height:50px;float: left;background-image:url('assets/login.png');background-repeat:no-repeat;padding-left:50px;cursor: pointer;"
                 onclick="location.href='table top idle state.php';"></div>
             <div style="height:50px;text-align: center;color: #00338D;text-align: center;font-size: 45px;margin:0px;">
-                Kaleidoscope
+                Kaleidoscopes
                 <div style="height:50px;float: right;background-image:url('assets/Group 563.png');background-repeat:no-repeat;padding-left:80px; background-size: contain;cursor:pointer;"
                     onclick="location.href='index.php';">
                     <div style="height:50px;float: right;background-image:url('assets/Logout button.png');background-repeat:no-repeat;padding-left:50px; background-size: contain;cursor:pointer;"
