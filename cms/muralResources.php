@@ -40,6 +40,16 @@ $scImage="assets/SC.png"
 	<!-- Added by shubham - 17/10 - End -->
 
 <style>
+	body{
+		           /* Added by magdum 17-07-23 */
+            /* for background image */
+            background-image: url(./assets/CMS-BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: black;
+	}
     #myBtn1:hover{
     background-color: #38b2d7ba !important;
     outline: none;
