@@ -1,0 +1,385 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+@font-face {
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    src: url("../../font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+}
+
+body {
+    
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-weight: normal;
+    margin: 0px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    src: url("../../font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+}
+
+p {
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    src: url("../../font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+}
+.container {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+.title-bar {
+    position: relative;
+    margin-top: 50px;
+}
+.title-bar h1 {
+    text-align: center;
+    color: #00338d;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+.title-bar h2 {
+    text-align: center;
+    color: #00338d;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+.left-arrow {
+    background-image: url('../../assets/login.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    display: inline-block;
+    position: absolute;
+    
+    
+}
+.history-btns-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin: 125px auto 0px auto;
+}
+.btn-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 157px;
+    height: 80px;
+    color: #fff;
+    background: #00338d;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    cursor: pointer;
+    border: 0px;
+    padding: 0px;
+}
+
+.btn-custom-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 157px;
+    height: 50px;
+    color: #fff;
+    background: #00338d;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    cursor: pointer;
+    border: 0px;
+    padding: 0px 30px;
+}
+.btn-custom-xsmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 140px;
+    height: 50px;
+    color: #fff;
+    background: #00338d;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    cursor: pointer;
+    border: 0px;
+    padding: 0px 10px;
+}
+.btn-custom-xxsmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #00338d;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    cursor: pointer;
+    border: 0px;
+    padding: 10px 30px;
+    min-width: 120px;
+    line-height: normal;
+}
+.btn-custom-xsmall:hover {
+    color: #fff;
+}
+.btn-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 157px;
+    height: 206px;
+    color: #fff;
+    background: #00338d;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    cursor: pointer;
+    border: 0px;
+    padding: 0px;
+}
+.content-block {
+    min-height: 350px;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-box-container {
+    padding: 50px 0 80px 0;
+    width: 100%;
+}
+.text-box {
+    border: solid 1px #ccc;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    border-radius: 10px;
+    min-height: 50px;
+    padding: 15px;
+    width: 100%;
+    color: #00338d;
+    -webkit-box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+    -moz-box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+    box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+}
+.text-box:focus, .text-box:focus-visible {
+    border: solid 1px #ccc;
+    outline: none;
+}
+.add-services .text-box {
+    min-height: 80px;
+    font-size: 30px;
+}
+.add-services .btn-custom {
+    min-width: 300px;
+}
+.add-button {
+    background-image: url('../../assets/Add Button.png');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    font-size: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.position-relative {
+    position: relative;
+}
+.hotspot-content .btn-custom {
+    margin: 30px 0;
+    min-width: 390px;
+}
+.add-hotspot-content {
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 50px auto 0px auto;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+    -moz-box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+    box-shadow: 0px 10px 15px 10px rgba(0,0,0,0.04);
+}
+.add-hotspot-content .title-bar {
+    margin: 0px 0 40px 0;
+}
+.add-hotspot-content label {
+    color: #838383;
+    font-size: 20px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+}
+.add-hotspot-content .form-control {
+    color: #838383;
+    appearance: auto;
+    font-size: 20px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+}
+.form-control-file-container {
+    position: relative;
+}
+.form-control-file-container .btn-custom-small {
+    font-size: 18px;
+    height: 44px;
+}
+.form-control-file-container .form-control[type=file] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity:0;
+    width: 160px;
+    height: 44px;
+}
+.edit-control {
+    position: relative;
+}
+.edit-control .form-control[type=text] {
+    padding-right: 40px;
+}
+.edit-control .edit-icon {
+    background-image: url('../../assets/Group 159.png');
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    font-size: 0px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.file-upload-container {
+    max-width: 850px;
+    margin: 50px auto 0 auto;
+    padding-left: 50px;
+}
+.file-upload-container-block {
+    max-height: 200px;
+    overflow-y: auto;
+}
+.file-upload-path {
+    color: #838383;
+    font-size: 26px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+}
+.file-upload-icon-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+    max-height: 285px;
+    overflow-y: auto;
+}
+.file-upload-icon {
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+.file-upload-icon img {
+    height: 65px;
+    width: auto;
+}
+.file-upload-name {
+    max-width: 100px;
+    color: #838383;
+    font-size: 18px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    padding: 5px 0px;
+    word-break: break-all;
+    line-height: normal;
+}
+.label {
+    color: #838383;
+    font-size: 24px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+}
+.full-row {
+    margin: 15px 0px;
+}
+.filename-extension {
+    color: #838383;
+    font-size: 16px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    margin-left: 10px;
+}
+.edit-services .text-box {
+    min-height: 50px;
+    font-size: 22px;
+    min-width: 400px;
+}
+.edit-services-row {
+    display: flex;
+    margin: 50px 0px;
+    align-items: center;
+}
+.edit-services-row label {
+    color: #838383;
+    font-size: 24px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    margin-right: 40px;
+}
+select.form-control {
+    color: #838383;
+    appearance: auto;
+    font-size: 20px;
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    padding: 12px;
+}
+select.form-control option {
+    color: #838383;
+}
+.first-level-service-container {
+    max-width: 850px;
+    margin: 50px auto 0 auto;
+    padding-left: 40px;
+}
+.services-container {
+    max-width: 850px;
+    margin: 50px auto 0 auto;
+    padding-left: 50px;
+}
+
+.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.add-button {
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+}
