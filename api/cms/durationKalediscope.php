@@ -3,17 +3,19 @@
 include('../db.php');
 header("Content-Type:application/json");
 
-if(isset($_POST['id']) && isset($_POST['duration'])){	
+if(isset($_POST['duration'])){	
 
-	$id = $_POST['id']; 
+	$AppName = "KalediscopeVideo"; 
 	$duration = $_POST['duration'];
 	
 	
-	$sql='UPDATE IdleStateKaleidoscope SET Duration =?  WHERE Id=?';
+	$sql='INSERT INTO MasterTimeDuration (AppName, TimeDuration)
+VALUES (?, ?)';
 
 
 	$options =  array( "Scrollable" => SQLSRV_CURSOR_KEYSET );
-	$params1 = array(&$duration,&$id);
+	$params1 = array(&$AppName,&$duration);
+	
 	
 	$stmt = sqlsrv_prepare( $conn, $sql, $params1, $options);
 
