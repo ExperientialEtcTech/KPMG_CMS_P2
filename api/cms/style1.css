@@ -1,0 +1,791 @@
+@font-face {
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: 'UNIVERSFORKPMG-LIGHT';
+    src: url("font/UNIVERSFORKPMG-LIGHT.TTF") format("truetype");
+}
+
+p {
+    font-family: 'UNIVERSFORKPMG-BOLD';
+    src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+}
+
+.body-bg {
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'UNIVERSFORKPMG-BOLD' !important;
+    src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+
+}
+
+.welcome,
+.Twitter,
+.addKaleidoscopeContainer .addKaleidoscope,
+span.welcome.signOff {
+    color: #00338D !important;
+    font-size: 61px !important;
+    font-weight: 600;
+}
+
+.welcome-screen-font {
+    height: 100px;
+    text-align: right;
+    font-size: 61px;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    top: 100px;
+    position: absolute;
+}
+
+
+
+.del-image1 {
+    float: right;
+}
+
+.arrow-left {
+    background-image: url("./assets/login.png");
+    background-repeat: no-repeat;
+    margin-top: 20px !important;
+}
+
+button.btn.btn-primary,
+a.btn.btn-primary {
+
+    background-color: #00338d !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+    padding: 5px !important;
+    width: 125px;
+
+}
+
+
+a.btn.btn-primary:hover,
+#save-btn:hover {
+
+    background-color: #38b2d7ba !important;
+    outline: none;
+    border: none;
+    color: #f0fff0 !important;
+
+}
+
+button.btn.btn-primary,
+a.btn.btn-primary:nth-child(even) {
+    margin-left: 10px !important;
+}
+
+
+.welcome-screen {
+    position: relative;
+}
+
+.del-image1 {
+    float: right;
+}
+
+span.tooltiptext {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 40%;
+    max-width: 400px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    font-family: "UNIVERSFORKPMG-LIGHT" !important;
+    border: solid grey;
+    z-index: 99;
+}
+
+.signOff .input-group>.form-control:focus,
+.signOff .input-group>.form-select:focus {
+    z-index: 0 !important;
+}
+
+.del-image1:hover~span {
+    display: block;
+    transition: all 0.5s;
+}
+
+.signOff .del-image1 {
+    position: absolute;
+    left: 0;
+    top: 20%;
+
+}
+
+.signOff span.tooltiptext {
+    bottom: unset !important;
+}
+
+.signOff form,
+.assign-resource {
+    font-size: 31px;
+    color: grey;
+}
+
+input.form-control {
+    color: grey !important;
+    height: 50px;
+}
+
+.signOff textarea.form-control,
+.usecase h1 {
+    color: gray !important;
+}
+
+select {
+    color: gray !important;
+    height: 50px;
+}
+
+.modal-text,
+#model-text {
+    color: gray;
+    text-align: left;
+}
+
+.signOff button {
+    width: 225px !important;
+}
+
+.add-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+textarea {
+
+    width: 265px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: solid grey;
+    font-size: 20px !important;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    border-style: none !important;
+    font-size: 31px;
+}
+
+th {
+    font-size: 31px;
+}
+
+.welcome-content-row {
+    width: 700px;
+    height: 100px;
+    margin: 0 auto !important;
+}
+
+.welcome-subcontent-row {
+    width: 700px;
+    height: 100px;
+    margin: 0 auto !important;
+}
+
+.videos-subcontent {
+    font-size: 31px;
+    text-align: center;
+}
+
+.common-welcome-color {
+    color: grey;
+    text-align: center;
+}
+
+
+.videos-content {
+    font-size: 31px;
+
+}
+
+.changePopup .box-selection {
+    float: right
+}
+
+.modal,
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    text-align: center;
+}
+
+.usecase .no-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.modal-content {
+    width: 50% !important;
+    padding: 30px;
+}
+
+.box-selection {
+    height: 40px;
+    width: 100px;
+    background-size: contain;
+    display: inline-block;
+    margin: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.box-selection-text {
+    height: 40px;
+    width: 100px;
+    background-size: contain;
+    display: inline-block;
+    margin: 20px;
+    background-image: url('assets/Rectangle-80.png');
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 25px;
+    vertical-align: middle;
+    width: 450px;
+    background-image: none;
+    color: #000000;
+}
+
+.vertical-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.vertical-center {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: right;
+}
+
+.box-selection1 {
+
+    float: right;
+    width: 36%;
+    top: 20%;
+}
+
+.text {
+    height: 32px;
+    margin-top: 9%;
+    border-radius: 10px;
+
+    width: 240px;
+
+}
+
+.vertical-center2 {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: right;
+}
+
+.close {
+    padding: 5px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-image,
+.kal-image {
+    width: 300px;
+    height: 300px;
+}
+
+.text {
+    font-family: "UNIVERSFORKPMG-LIGHT" !important;
+}
+
+.submit {
+    text-align: center;
+}
+
+.subText {
+    padding-left: 30px !important;
+}
+
+#save-btn {
+    background-color: #00338d !important;
+    font-weight: bold !important;
+    font-size: 25px !important;
+    padding: 5px !important;
+    width: 125px;
+
+}
+
+#textbtn {
+    font-size: 15px;
+    padding: 3px;
+    border: none;
+    height: 29px;
+    width: 30px;
+}
+
+#textbtn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.red {
+    color: red;
+}
+
+.map-red {
+    width: 40px;
+    height: 57px;
+}
+
+.addKaleidoscopeContainer .searchInput {
+    width: 80%;
+    height: 52px;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.addKaleidoscopeContainer .content-search {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+#searchBtn {
+    font-size: 24px;
+
+
+    border: none;
+    margin-left: -50px;
+    background: none;
+}
+
+.save-usecase {
+    text-align: center;
+}
+
+.addKaleidoscopeContainer .box-selection {
+    display: inline-block;
+    margin: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+
+
+}
+
+.addServiceContainer .box-selection-text {
+    height: 40px;
+
+    background-size: contain;
+    display: inline-block;
+    margin: 20px;
+    background-image: url(assets/Rectangle-80.png);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 25px;
+    vertical-align: middle;
+    width: 375px;
+    background-image: none;
+    color: #000000;
+}
+
+.question-row i {
+    font-size: 60px;
+    color: yellow;
+    float: right;
+}
+
+#fileBrowser-service {
+    height: 40vh;
+    overflow-x: hidden;
+}
+
+.addKaleidoscopeContainer #fileBrowser {
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: auto;
+    height: 100vh;
+    max-height: 250px;
+}
+
+.addKaleidoscopeContainer .box-selection-text {
+    width: 65%;
+}
+
+.save-kaleidoscope {
+    text-align: center;
+}
+
+.save-kaleidoscope button {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50px;
+}
+
+.Twitter {
+    color: #00338D;
+}
+
+.resource {
+    padding: 10px;
+}
+
+.type-select {
+    margin: 20px;
+}
+
+.resource-form {
+    margin-top: 50px;
+}
+
+.resource-form label {
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+.hotspot label {
+    font-size: 31px;
+}
+
+.img1.muralAddImage {
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+}
+
+.container-lg {
+    margin-top: 20px;
+}
+
+.question-row {
+    margin-top: 10px !important;
+    padding: 15px !important;
+
+}
+
+.question-row p {
+    margin-bottom: 0;
+    padding: 5px !important;
+    font-size: 31px;
+}
+
+.question-row button {
+    margin-right: 20px;
+}
+
+.feedback-screen label {
+
+    padding: 5px !important;
+    font-size: 31px;
+}
+
+.feedback-screen .top-50 {
+    margin-top: 15%;
+
+}
+
+
+
+.feedback-screen .padding-5 {
+    padding: 5px;
+}
+
+.feedback-screen input {
+    height: 50px;
+}
+
+.feedback-screen .btn {
+    margin-top: 75px;
+}
+
+.delete-feedback {
+    margin-left: 30px;
+}
+
+.signOff img#basic-addon2 {
+    height: 50px;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: 0;
+}
+
+.height-500 {
+    height: 500px;
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 15vh !important;
+}
+
+.serviceSector button {
+    width: 100% !important;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 5px !important;
+
+}
+
+.serviceSector .deleteIcon {
+    margin-top: 20px;
+    text-align: right;
+
+}
+
+.serviceSector .border-solid {
+    border-right: 1px solid;
+}
+
+.serviceSector .margin-top-75,
+.assign-resource .margin-top-75 {
+    margin-top: 75px;
+}
+
+.service-sector-name {
+    font-size: 31px;
+    text-align: center;
+}
+
+.usecase .name {
+    width: 100% !important;
+}
+
+.usecase .margin-top-10 {
+    margin-top: 15px;
+}
+
+#changeViewBody {
+    height: 50vh;
+}
+
+iframe {
+    height: 45vh
+}
+
+.viewUseCase {
+    display: none;
+}
+
+.feedback-screen label {
+    color: gray;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.font-size-31 {
+    font-size: 31px;
+}
+
+#media-content {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .welcome {
+        font-size: 14px;
+    }
+
+    .resource-form label {
+        font-size: 18px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .welcome,
+    .Twitter,
+    .resource-form label,
+    span.welcome.signOff {
+        font-size: 24px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    button.btn.btn-primary,
+    a.btn.btn-primary {
+        background-color: #00338d !important;
+        font-weight: bold !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+        width: 80px;
+
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 14px !important;
+    }
+
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th,
+    textarea {
+        white-space: nowrap;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+
+    .welcome,
+    .Twitter,
+    span.welcome.signOff {
+        font-size: 35px !important;
+    }
+
+    .resource-form label {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-device-width: 767px) and (max-width: 900px) {
+    .signOff label {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .signOff .del-image1 {
+
+        /* top: 42% */
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    /* .signOff .del-image1 {
+
+        top: 42%
+    } */
+}
+
+@media screen and (max-width: 425px) {
+    span.welcome.signOff {
+        font-size: 18px;
+    }
+
+
+    /* .signOff .del-image1 {
+        height: 20px;
+        top: 44%;
+    } */
+
+
+
+    .signOff label {
+        margin-left: 25px;
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-width: 1400px) {
+
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th,
+    textarea {
+
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (min-device-width: 992px) and (max-width: 1200px) {
+
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th,
+    textarea {
+        font-size: 16px;
+    }
+
+    .welcome {
+        font-size: 30px;
+    }
+}
