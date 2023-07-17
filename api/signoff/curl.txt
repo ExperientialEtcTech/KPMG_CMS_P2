@@ -1,0 +1,23 @@
+*   Trying 10.188.7.135:80...
+* Connected to 10.188.7.135 (10.188.7.135) port 80 (#0)
+> POST /api/rfid/searchVisitorWelcomeDetails.php HTTP/1.1
+Host: 10.188.7.135
+Accept: */*
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwMjcwMTIsImlzcyI6Imh0dHA6Ly8xMC4xODguNy4xMzUvIiwibmJmIjoxNjU3MDI3MDEyLCJleHAiOjE2NTcwMjc5MTIsImp3dEF1dGhVc2VyIjoia3BtZ19yZmlkIiwiaXAiOiIxMC4xODguNy4xMzUifQ.43tVbMZd20FDI8g30JL0Cifpi13YjldgbP9hUn1krFs
+Content-Length: 464
+Content-Type: multipart/form-data; boundary=------------------------bb221b87f6f53f14
+
+* We are completely uploaded and fine
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Type: application/json
+< Server: Microsoft-IIS/10.0
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST
+< Access-Control-Max-Age: 3600
+< Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+< X-Powered-By: ASP.NET
+< Date: Tue, 05 Jul 2022 13:20:39 GMT
+< Content-Length: 32
+< 
+* Connection #0 to host 10.188.7.135 left intact
