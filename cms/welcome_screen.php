@@ -84,6 +84,7 @@ body {
 p {
     font-family: 'UNIVERSFORKPMG-BOLD';
     src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+    //added by hariom//
 }
 </style>
 
