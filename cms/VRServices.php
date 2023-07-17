@@ -63,6 +63,14 @@ if(empty($response)) {
         margin: 0px;
         font-family: 'UNIVERSFORKPMG-BOLD';
         src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
+	               /* Added by magdum 17-07-23 */
+            /* for background image */
+            background-image: url(./assets/CMS-BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: black;
     }
 
 
