@@ -100,6 +100,16 @@ include_once('jwt.php');
     cursor: pointer;
     transition: 0.1s;
 }
+	    body{
+		         /* Added by magdum 18-07-23 */
+            /* for background image */
+            background-image: url(./assets/CMS-BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: black;
+	    }
     </style>
 </head>
 
