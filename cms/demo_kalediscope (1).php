@@ -10,7 +10,7 @@ $jsonResponse = rest_call('POST', $url, $postData, 'multipart/form-data', "Beare
 $response = json_decode($jsonResponse, true)['files'];
 $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
-
+  
 
 ?>
 <!DOCTYPE html>
@@ -26,6 +26,10 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/session_check.js"></script>
     <!-- Added by shubham - 17/10 - End -->
+
+      <!-- Added by Treesa - 18/7 - Start -->
+     <script src="assets/js/jquery-ui.js"></script>
+     <script src="assets/js/jquery-3.6.0.js"></script>
 
     <title>KPMG || Kaleidoscope</title>
 </head>
