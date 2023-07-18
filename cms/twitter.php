@@ -231,7 +231,9 @@ foreach ($response as $value) {
  KPMG Assurance and Consulting Services LLP has entered into sub-license arrangements with certain entities in India. These application(s) are also for the use of such sub-licensees in India.</span>
 		 </div>
     <!-- Added by shubham Jadhav - for copyright footer - 14/1 - end  -->
- <div class="add-button"><a href="AddWeather.php"><img src="assets/Add Button.png"></a></div>
+ <!-- commented by shubham Jadhav - as we would not add more than 3 handles - 14/1 - start -->
+<!--  <div class="add-button"><a href="AddWeather.php"><img src="assets/Add Button.png"></a></div>-->
+<!-- commented by shubham Jadhav - as we would not add more than 3 handles - 14/1 - start -->
 
 </body>
 
