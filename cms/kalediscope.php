@@ -35,14 +35,6 @@ body {
     margin: 0px;
     font-family: 'UNIVERSFORKPMG-BOLD';
     src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
-	           /* Added by magdum 17-07-23 */
-            /* for background image */
-            background-image: url(./assets/CMS-BG.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            background-color: black;
 }
 
 
@@ -167,6 +159,30 @@ p {
 video {
     width: 100%;
 }
+body {
+  position: relative;
+	
+	
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 9999;
+}
+
+.popup.active {
+  display: block;
+}
+
+
+
 </style>
 
 <body>
@@ -184,15 +200,30 @@ video {
             <div style="height:50px;float: left;background-image:url('assets/login.png');background-repeat:no-repeat;padding-left:50px;cursor: pointer;"
                 onclick="location.href='table top idle state.php';"></div>
             <div style="height:50px;text-align: center;color: #00338D;text-align: center;font-size: 45px;margin:0px;">
-                Kaleidoscopes
+                Kaleidoscope
                 <div style="height:50px;float: right;background-image:url('assets/Group 563.png');background-repeat:no-repeat;padding-left:80px; background-size: contain;cursor:pointer;"
                     onclick="location.href='index.php';">
                     <div style="height:50px;float: right;background-image:url('assets/Logout button.png');background-repeat:no-repeat;padding-left:50px; background-size: contain;cursor:pointer;"
                         onclick="location.href='login.php';"></div>
-                </div>
+					</div>
+					<div class="box">
+					   <button type="button" class="btn" onclick="showPopup()">Edit</button>
+						 <div class="popup" id="renamePopup">
+							  <h4>Time Input Form</h4>
+							<form method="POST" action="durationKaleidoscope.php">
+								<label style="font-size:15px;" for="time">Time (MM:SS)</label>
+								<input type="text" name="duration" id="time" pattern="[0-5]?[0-9]:[0-5][0-9]" required>
+								<input type="submit" name="submit" value="Submit">
+								<input type="button" onclick="hidePopup()" value="Cancel">
+							</form>
+				
+						</div>
+					</div>
+                
                 <?php
 $i=1;
 foreach ($response as $value) {
+	//print_r($value);
   ?>
                 <div style="width: 1000px;margin:auto;height:100px;">
                     <div class="box-selection-text">
@@ -205,14 +236,18 @@ foreach ($response as $value) {
                         <button type="button" class="btn"
                             onClick="viewImage('<?php echo $value['slides']; ?>','<?php echo $i;?>')">view</button>
                     </div>
+					
 
                     <div class="box-selection">
                         <a href="deleteKalediscope.php?kaleidoscope=<?php echo $value['VideoOrder'];?>">
                             <img src="assets/Delete icon.png" alt="imf"></a>
                     </div>
-                </div>
+					 
+				</div>
+				
+				
 					  <?php
-			 if($i >= (count($response))){
+if($i >= (count($response))){
 			?>
 		
 			 <!-- Added by shubham Jadhav - for copyright footer  - 14/1 - start  -->
@@ -253,6 +288,7 @@ foreach ($response as $value) {
 		
 		
             <script src="footer.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
             const span = document.getElementById("close");
             const modal = document.getElementById('KaleidoscopeModal');
@@ -263,7 +299,7 @@ foreach ($response as $value) {
                 let url = new URL(event);
                 let html =
 
-                    ` <video controls class="video" id="video-container"><source src=${url.href} id="kal-slide" type="video/mp4">Your browser does not support the video tag.</video>"`;
+                    ` <video controls class="video" id="video-container"><source src=${url.href} id="kal-slide" type="video/mp4">Your browser does not support the video tag.</video>`;
                 console.log(html)
                 document.getElementById("modal-data").innerHTML = html;
                 document.getElementById("slide-text").innerHTML = "Slide " + i;
@@ -288,6 +324,18 @@ foreach ($response as $value) {
                     modal.style.display = "none";
                 }
             }
+        function showPopup() {
+            document.getElementById("renamePopup").style.display = "block";
+        }
+
+        function hidePopup() {
+            document.getElementById("renamePopup").style.display = "none";
+        }
+				
+		/*function myFunction(filename) {
+  let url = "editKalediscope.php?Filename=" + encodeURIComponent(filename);
+  window.location.href = url;
+}*/
             </script>
 </body>
 
