@@ -50,6 +50,16 @@ include_once('security.php');
     </script>
 </head>
 <style>
+	body{
+		            /* Added by magdum 18-07-23 */
+            /* for background image */
+            background-image: url(./assets/CMS-BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-color: black;
+	}
 /*Added by shubham - 30/08*/
 .del-image1:hover~.tooltiptext {
         Display: block;
