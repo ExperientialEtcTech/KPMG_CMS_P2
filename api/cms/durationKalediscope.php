@@ -1,19 +1,21 @@
 <?php
-//include_once('../../jwt/jwtAccess.php');
-include('../db.php');
+include_once('../../jwt/jwtAccess.php');
 header("Content-Type:application/json");
+include('../db.php');	
 
-if(isset($_POST['id']) && isset($_POST['duration'])){	
+if(isset($_POST['duration'])){	
 
-	$id = $_POST['id']; 
+	$AppName = "KaleidoscopeVideo"; 
 	$duration = $_POST['duration'];
+	$Id = "1";
 	
 	
-	$sql='UPDATE IdleStateKaleidoscope SET Duration =?  WHERE Id=?';
+	//$sql='INSERT INTO MasterTimeDuration (AppName, TimeDuration)VALUES (?, ?)';
+	$sql='UPDATE MasterTimeDuration SET AppName=?,TimeDuration = ? WHERE Id = ?';
 
 
 	$options =  array( "Scrollable" => SQLSRV_CURSOR_KEYSET );
-	$params1 = array(&$duration,&$id);
+	$params1 = array(&$AppName,&$duration,&$Id);
 	
 	$stmt = sqlsrv_prepare( $conn, $sql, $params1, $options);
 
@@ -45,7 +47,7 @@ function response($creds)
 {
 	$response['msg'] = $creds;
 	$json_response = json_encode($response);
-	//insert_log($conn,"cms",$_SERVER['REMOTE_ADDR'],basename($_SERVER['PHP_SELF']),json_encode($_POST),$json_response);
+	insert_log($conn,"cms",$_SERVER['REMOTE_ADDR'],basename($_SERVER['PHP_SELF']),json_encode($_POST),$json_response);
 	echo $json_response;
 }
 ?>
