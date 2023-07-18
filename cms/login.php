@@ -169,6 +169,20 @@ if (isset($_POST['login'])) {
 		   button {
             margin-top: 20px; 
         }
+		   main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+		   .copyright {
+            font-size: 0.9vw;
+            margin: 25px;
+            max-width: 100%;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
     </style>
     <script src="assets/js/jquery.min.js"></script>
     <script>
@@ -239,6 +253,12 @@ if (isset($_POST['login'])) {
             </form>
         </div>
 			 </div>
+		
+		 <div class="copyright">
+            &copy; <span>2023 KPMG Assurance and Consulting Services LLP, an Indian Limited Liability Partnership and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited ("KPMG International"), an English Company limited by guarantee. All rights reserved. The KPMG name and logo are registered trademarks of KPMG International.
+                KPMG Assurance and Consulting Services LLP has entered into sub-license arrangements with certain entities in India. These application(s) are also for the use of such sub-licensees in India.</span>
+        </div>
+		
     </main>
 </body>
 
