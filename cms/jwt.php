@@ -3,7 +3,8 @@ if(!isset($_COOKIE['kpmg-access']))
 {
     $postData = array("user"=>"kpmg_cms", "pass"=>"kpmg_cms","cli_ip"=>$_SERVER['REMOTE_ADDR']);
     
-    $url = 'http://10.188.7.135/jwt/jwtAuthorize.php';
+    //$url = 'http://10.188.7.135/jwt/jwtAuthorize.php';
+    $url = 'https://kpmg.experientialetc.com/jwt/jwtAuthorize.php';
     $jsonResponse = rest_call('POST',$url, $postData,'multipart/form-data');
 
     $response = json_decode($jsonResponse);
