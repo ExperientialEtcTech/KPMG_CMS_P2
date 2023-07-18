@@ -31,8 +31,8 @@ if(isset($_POST['otp']))
 	$postData = array("username"=>$_SESSION['raw-username'],"otp"=>$otp);
 	$url = $apiBaseUrl.'login/sendOtp.php';
 	$jsonResponse = rest_call('POST',$url, $postData,'multipart/form-data',"Bearer ".$_COOKIE['kpmg-access']);
-
-	//echo $otp;
+	//added by shubham J - 18/7/23
+	echo $otp;
 	//$response = json_decode($jsonResponse,true);
     //$filename = 'mail-fp.lock';
 }
