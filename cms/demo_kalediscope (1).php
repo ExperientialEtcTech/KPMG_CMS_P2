@@ -10,7 +10,7 @@ $jsonResponse = rest_call('POST', $url, $postData, 'multipart/form-data', "Beare
 $response = json_decode($jsonResponse, true)['files'];
 $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
-  
+
 
 ?>
 <!DOCTYPE html>
@@ -27,9 +27,13 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
     <script src="assets/js/session_check.js"></script>
     <!-- Added by shubham - 17/10 - End -->
 
-      <!-- Added by Treesa - 18/7 - Start -->
-     <script src="assets/js/jquery-ui.js"></script>
-     <script src="assets/js/jquery-3.6.0.js"></script>
+
+
+    <!-- Added by Treesa - 18/7 - Start -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Added by Treesa - 18/7 - End -->
+
 
     <title>KPMG || Kaleidoscope</title>
 </head>
@@ -195,17 +199,20 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
 
         <div style="width: 1000px;height:100px;margin:auto;">
-            <div style="height:50px;float: left;background-image:url('assets/login.png');background-repeat:no-repeat;padding-left:50px;cursor: pointer;" onclick="location.href='table top idle state.php';"></div>
+            <div style="height:50px;float: left;background-image:url('assets/login.png');background-repeat:no-repeat;padding-left:50px;cursor: pointer;"
+                onclick="location.href='table top idle state.php';"></div>
             <div style="height:50px;text-align: center;color: #00338D;text-align: center;font-size: 45px;margin:0px;">
                 Kaleidoscope
-                <div style="height:50px;float: right;background-image:url('assets/Group 563.png');background-repeat:no-repeat;padding-left:80px; background-size: contain;cursor:pointer;" onclick="location.href='index.php';">
-                    <div style="height:50px;float: right;background-image:url('assets/Logout button.png');background-repeat:no-repeat;padding-left:50px; background-size: contain;cursor:pointer;" onclick="location.href='login.php';"></div>
+                <div style="height:50px;float: right;background-image:url('assets/Group 563.png');background-repeat:no-repeat;padding-left:80px; background-size: contain;cursor:pointer;"
+                    onclick="location.href='index.php';">
+                    <div style="height:50px;float: right;background-image:url('assets/Logout button.png');background-repeat:no-repeat;padding-left:50px; background-size: contain;cursor:pointer;"
+                        onclick="location.href='login.php';"></div>
                 </div>
                 <?php
                 $i = 1;
                 $serialNumber = 1; // Add this line
                 foreach ($response as $value) {
-                ?>
+                    ?>
 
 
 
@@ -215,12 +222,19 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
                             <div style="width: 1000px;margin:auto;height:100px;">
                                 <div class="box-selection-text">
                                     <div class="vertical-centers">
-                                    <?php echo $serialNumber; ?>. Slide <?php echo $i; ?>
+                                        <?php echo $serialNumber; ?>. Slide
+                                        <?php echo $i; ?>
                                     </div>
                                 </div>
 
                                 <div class="box">
-                                    <button type="button" class="btn" onClick="viewImage('<?php echo $value['slides']; ?>','<?php echo $i; ?>')">view</button>
+
+                                <tr id="<?php echo $value['id']?>">
+                                </div>
+
+                                <div class="box">
+                                    <button type="button" class="btn"
+                                        onClick="viewImage('<?php echo $value['slides']; ?>','<?php echo $i; ?>')">view</button>
                                 </div>
 
 
@@ -247,28 +261,35 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
 
                     <?php
-                $i++;
-                $serialNumber++; // Add this line
-            }
-            ?>
+                    $i++;
+                    $serialNumber++; // Add this line
+                }
+                ?>
 
 
 
-                    <?php
-                    if ($i >= (count($response))) {
+                <?php
+                if ($i >= (count($response))) {
                     ?>
 
-                        <!-- Added by shubham Jadhav - for copyright footer  - 14/1 - start  -->
+                    <!-- Added by shubham Jadhav - for copyright footer  - 14/1 - start  -->
 
-                        <div style="z-index:-99;margin:25px;text-align:left;font-size:0.9vw;bottom:10px;position:relative;color:black;">
-                            &copy; <span>2023 KPMG Assurance and Consulting Services LLP, an Indian Limited Liability Partnership and a member firm of the KPMG global organization of independent member firms affiliated with KPMG International Limited ("KPMG International"), an English Company limited by guarantee. All rights reserved. The KPMG name and logo are registered trademarks of KPMG International.
-                                KPMG Assurance and Consulting Services LLP has entered into sub-license arrangements with certain entities in India. These application(s) are also for the use of such sub-licensees in India.</span>
-                        </div>
-                        <!-- Added by shubham Jadhav - for copyright footer - 14/1 - end  -->
+                    <div
+                        style="z-index:-99;margin:25px;text-align:left;font-size:0.9vw;bottom:10px;position:relative;color:black;">
+                        &copy; <span>2023 KPMG Assurance and Consulting Services LLP, an Indian Limited Liability
+                            Partnership and a member firm of the KPMG global organization of independent member firms
+                            affiliated with KPMG International Limited ("KPMG International"), an English Company limited by
+                            guarantee. All rights reserved. The KPMG name and logo are registered trademarks of KPMG
+                            International.
+                            KPMG Assurance and Consulting Services LLP has entered into sub-license arrangements with
+                            certain entities in India. These application(s) are also for the use of such sub-licensees in
+                            India.</span>
+                    </div>
+                    <!-- Added by shubham Jadhav - for copyright footer - 14/1 - end  -->
                     <?php
-                    }
-                   /* ?>
-*/         
+                }
+                /* ?>
+                 */
                 ?>
             </div>
         </div>
@@ -295,6 +316,7 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
     <script src="footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         const span = document.getElementById("close");
         const modal = document.getElementById('KaleidoscopeModal');
@@ -312,7 +334,7 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
             modal.style.display = "block";
 
         }
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
             document.getElementById("modal-data").innerHTML = "";
             let video = document.getElementById("video-container")
@@ -320,7 +342,7 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
                 video.pause();
             };
         }
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             let video = document.getElementById("video-container")
             if (video) {
                 video.pause();
@@ -347,72 +369,47 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
 
 
+    <!-- Added by Treesa - 19/7 - Start -->
+
+    <!-- For dragging the containers -->
+
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+        $(document).ready(function () {
 
-            var dragSrcEl = null;
-
-            function handleDragStart(e) {
-                this.style.opacity = '0.4';
-
-                dragSrcEl = this;
-
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('text/html', this.innerHTML);
-            }
-
-            function handleDragOver(e) {
-                if (e.preventDefault) {
-                    e.preventDefault();
+            $(".row_position").sortable({
+                delay: 150,
+                stop: function () {
+                    var selectedData = new Array();
+                    $(".row_position>tr").each(function () {
+                        selectedData.push($(this).attr("id"));
+                    });
+                    updateOrder(selectedData);
                 }
-
-                e.dataTransfer.dropEffect = 'move';
-
-                return false;
-            }
-
-            function handleDragEnter(e) {
-                this.classList.add('over');
-            }
-
-            function handleDragLeave(e) {
-                this.classList.remove('over');
-            }
-
-            function handleDrop(e) {
-                if (e.stopPropagation) {
-                    e.stopPropagation(); // stops the browser from redirecting.
-                }
-
-                if (dragSrcEl != this) {
-                    dragSrcEl.innerHTML = this.innerHTML;
-                    this.innerHTML = e.dataTransfer.getData('text/html');
-                }
-
-                return false;
-            }
-
-            function handleDragEnd(e) {
-                this.style.opacity = '1';
-
-                items.forEach(function(item) {
-                    item.classList.remove('over');
-                });
-            }
-
-
-            let items = document.querySelectorAll('.container .box');
-            items.forEach(function(item) {
-                item.addEventListener('dragstart', handleDragStart, false);
-                item.addEventListener('dragenter', handleDragEnter, false);
-                item.addEventListener('dragover', handleDragOver, false);
-                item.addEventListener('dragleave', handleDragLeave, false);
-                item.addEventListener('drop', handleDrop, false);
-                item.addEventListener('dragend', handleDragEnd, false);
             });
         });
     </script>
 
+    <!-- For sending data through ajax -->
+    <script type="text/javascript">
+        function updateOrder(aData) {
+            $.ajax({
+                url: 'ajaxpost.php',
+                type: 'POST',
+                data: {
+                    allData: aData
+                },
+                success: function (response) {
+                    var arrayAsString = JSON.stringify(aData);
+
+
+                    alert(arrayAsString);
+                }
+            });
+        }
+    </script>
+
+
+    <!-- Added by Treesa - 19/7 - End -->
 
 
 
