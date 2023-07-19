@@ -30,7 +30,7 @@ $lastOrder = $response[count($response) - 1]['VideoOrder'] + 1;
 
 
     <!-- Added by Treesa - 18/7 - Start -->
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.minjs.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <!-- Added by Treesa - 18/7 - End -->
 
