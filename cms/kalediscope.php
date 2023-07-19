@@ -36,7 +36,7 @@ body {
     font-family: 'UNIVERSFORKPMG-BOLD';
     src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
 	            /* Added by magdum 18-07-23 */
-            /* for background image */
+            /* for background images */
             background-image: url(./assets/CMS-BG.jpg);
             background-position: center;
             background-repeat: no-repeat;
