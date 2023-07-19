@@ -35,14 +35,6 @@ body {
     margin: 0px;
     font-family: 'UNIVERSFORKPMG-BOLD';
     src: url("font/UNIVERSFORKPMG-BOLD.TTF") format("truetype");
-	            /* Added by magdum 18-07-23 */
-            /* for background image */
-            background-image: url(./assets/CMS-BG.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            background-color: black;
 }
 
 
@@ -228,7 +220,7 @@ body {
 						</div>
 					</div>
                 
-                <?php
+           <?php
 $i=1;
 foreach ($response as $value) {
 	//print_r($value);
@@ -250,6 +242,20 @@ foreach ($response as $value) {
                         <a href="deleteKalediscope.php?kaleidoscope=<?php echo $value['VideoOrder'];?>">
                             <img src="assets/Delete icon.png" alt="imf"></a>
                     </div>
+					<div class="box">
+					   <button type="button" class="btn" onclick="showPopup(<?php echo $value['id']; ?>)">Slide name edit</button>
+						 <div class="popup" id="renamePopup<?php echo $value['id']; ?>">
+							  <h4>Slide Name Input Form</h4>
+							<form method="POST" action="EditSlideName.php">
+								<label style="font-size:15px;" for="time">Slide Name</label>
+								<input type="text" name="videoName" id="videoName"  required>
+								<input type="hidden" name="videoId" value="<?php echo $value['id']; ?>">
+								<input type="submit" name="submit" value="Submit">
+								<input type="button" onclick="hidePopup(<?php echo $value['id']; ?>)" value="Cancel">
+							</form>
+				
+						</div>
+					</div>
 					 
 				</div>
 				
@@ -332,19 +338,26 @@ if($i >= (count($response))){
                     modal.style.display = "none";
                 }
             }
-        function showPopup() {
-            document.getElementById("renamePopup").style.display = "block";
+        function showTimePopup() {
+            document.getElementById("TimeDurationPopup").style.display = "block";
         }
 
-        function hidePopup() {
-            document.getElementById("renamePopup").style.display = "none";
+        function hideTimePopup() {
+            document.getElementById("TimeDurationPopup").style.display = "none";
+        }
+				 function showPopup(id) {
+            document.getElementById("renamePopup"+id).style.display = "block";
+        }
+
+        function hidePopup(id) {
+            document.getElementById("renamePopup"+id).style.display = "none";
         }
 				
 		/*function myFunction(filename) {
   let url = "editKalediscope.php?Filename=" + encodeURIComponent(filename);
   window.location.href = url;
 }*/
-            </script>
+            </script> 
 </body>
 
 </html>
