@@ -10,13 +10,23 @@ $jsonResponse = rest_call('POST', $url, $postData, 'multipart/form-data', "Beare
 
 $response = json_decode($jsonResponse, true)['files'];
 
+
+$postDataweather = array();
+$urlweather = 'https://api.openweathermap.org/data/2.5/weather?q='.'mumbai'.'&mode=json&units=metric&APPID=11d13ae5034256d2b02b40b79743d41e'; // insert actual APPID
+
+$jsonResponseweather = rest_call('POST',$urlweather, $postDataweather,'multipart/form-data');
+
+$responseweather = json_decode($jsonResponseweather,true);
+//$responseweather['cod']=200;// remove in production after openweather domain is allowed in colab
+
 // Determine if services are up or not
 $apiStatusMessage = "";
-if ($response === null) {
+if ($responseweather['cod']!="200") {
     $apiStatusMessage = "*services are currently down.";
 } else {
     $apiStatusMessage = "*services are up and running.";
 }
+
 ?>
 
 <!DOCTYPE html>
