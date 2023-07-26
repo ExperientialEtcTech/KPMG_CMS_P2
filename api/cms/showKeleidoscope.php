@@ -4,7 +4,7 @@ header("Content-Type:application/json");
 include('../db.php');
 date_default_timezone_set("Asia/Kolkata");
 $details=Array();
-$sql = "SELECT Id,FilePath, VideoOrder FROM IdleStateKaleidoscope WHERE Status=?";
+$sql = "SELECT Id,FilePath, VideoOrder FROM IdleStateKaleidoscope WHERE Status=? ORDER BY VideoOrder";
 $status = 1;
 
 $params1 = array(&$status);
